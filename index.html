@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khawaja Ventures builds AI agent systems for Web3 market intelligence — signal pipelines for onchain and perp markets.">
+  <meta name="theme-color" content="#0C0C0E">
+  <title>Khawaja Ventures — AI Signal Infrastructure for Crypto Markets</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wdth,wght@0,75..100,400..700;1,75..100,400..700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <nav class="nav__inner container" aria-label="Primary navigation">
+      <a href="#" class="nav__wordmark">Khawaja Ventures</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="#product">Product</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero bg-grid" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero__content">
+        <h1 class="hero__heading" id="hero-heading">
+          AI agents that turn noisy crypto markets into clear decisions.
+        </h1>
+        <p class="hero__sub">
+          Khawaja Ventures builds signal pipelines for onchain and perp markets: monitor, explain, and alert with accountable agent workflows.
+        </p>
+        <div class="hero__ctas">
+          <a href="mailto:zakir@khawaja-ventures.com" class="btn btn--primary">Contact</a>
+          <a href="#approach" class="btn btn--secondary">View approach</a>
+        </div>
+        <p class="hero__trust">Built by Zakir Khawaja. US-based.</p>
+      </div>
+
+      <div class="hero__signal" aria-hidden="true">
+        <svg class="signal-svg" viewBox="0 0 900 120" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <path class="signal-glow"
+                d="M 0,60 L 220,60 L 260,60 L 290,28 L 310,78 L 328,12 L 348,70 L 362,25 L 378,58 L 400,62 L 430,59 L 470,60 L 900,60"
+                pathLength="1" fill="none"
+                stroke="var(--color-signal-dim)" stroke-width="4"
+                filter="url(#glow)"/>
+          <path class="signal-line" id="signalPath"
+                d="M 0,60 L 220,60 L 260,60 L 290,28 L 310,78 L 328,12 L 348,70 L 362,25 L 378,58 L 400,62 L 430,59 L 470,60 L 900,60"
+                pathLength="1" fill="none"
+                stroke="var(--color-signal)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <circle class="signal-traveler" r="3" fill="var(--color-signal)" opacity="0">
+            <animateMotion dur="6s" repeatCount="indefinite" calcMode="linear" begin="2.7s">
+              <mpath href="#signalPath"/>
+            </animateMotion>
+            <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.7s" fill="freeze"/>
+          </circle>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ PRODUCT ============ -->
+    <section class="section product" id="product" aria-labelledby="product-heading">
+      <div class="container">
+        <div class="section__header" data-animate>
+          <h2 class="section__title" id="product-heading">Signal-as-a-Service</h2>
+          <span class="badge badge--status">Private beta</span>
+        </div>
+        <p class="section__intro" data-animate>
+          Turn raw market data into structured, explainable alerts. Each signal carries its reasoning, sources, and confidence level.
+        </p>
+
+        <div class="grid grid--3" data-animate>
+          <div class="card">
+            <h3 class="card__title">Event detection</h3>
+            <p class="card__body">
+              Liquidations, funding flips, whale flow, governance events. Continuous monitoring across onchain and perp markets.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Agent explanations</h3>
+            <p class="card__body">
+              Why it matters, what changed, confidence level and sources. Every alert is accountable, not a black box.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Delivery-ready</h3>
+            <p class="card__body">
+              Email, Telegram, and API-ready outputs with full audit trail. Plug into your existing workflow.
+            </p>
+          </div>
+        </div>
+
+        <!-- Alert mock -->
+        <div class="alert-mock" data-animate role="img" aria-label="Example signal alert showing an ETH-USD event with reasoning and recommended actions. This is illustrative, not live data.">
+          <div class="alert-mock__header">
+            <div class="alert-mock__status">
+              <span class="signal-dot signal-dot--live"></span>
+              <span class="text-mono text-xs">EXAMPLE SIGNAL</span>
+            </div>
+            <span class="badge badge--confidence">HIGH CONFIDENCE</span>
+            <time class="text-mono text-xs text-secondary" datetime="2025-01-15T09:42:17Z">2025-01-15 09:42 UTC</time>
+          </div>
+          <div class="alert-mock__body">
+            <div class="alert-mock__row">
+              <span class="alert-mock__label">Asset</span>
+              <span class="alert-mock__value text-mono">ETH-USD</span>
+            </div>
+            <div class="alert-mock__row">
+              <span class="alert-mock__label">Trigger</span>
+              <span class="alert-mock__value">Funding rate inversion + 14-day volume divergence on perp markets</span>
+            </div>
+            <div class="alert-mock__row">
+              <span class="alert-mock__label">Reasoning</span>
+              <span class="alert-mock__value">Perp funding rate flipped negative while open interest continues expanding. Settlement volume exceeding spot volume. Historically, this pattern precedes directional moves within 72 hours.</span>
+            </div>
+            <div class="alert-mock__row alert-mock__row--last">
+              <span class="alert-mock__label">Actions</span>
+              <div class="alert-mock__actions">
+                <span class="badge badge--action">Monitor position sizing</span>
+                <span class="badge badge--action">Set stop parameters</span>
+                <span class="badge badge--action">Alert on regime change</span>
+              </div>
+            </div>
+          </div>
+          <div class="alert-mock__footer">
+            <span class="text-xs text-secondary">Signal ID: SIG-2025-0115-0942 · Illustrative example only</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section approach bg-grid" id="approach" aria-labelledby="approach-heading">
+      <div class="container">
+        <h2 class="section__title" id="approach-heading" data-animate>Approach</h2>
+        <p class="section__intro" data-animate>
+          Every signal is the product of a structured pipeline, not a single prompt. Here is how the system is designed.
+        </p>
+        <ul class="approach__list" data-animate>
+          <li>
+            <strong>Multi-agent workflows</strong>
+            <span>Specialized agents for detection, analysis, and delivery. Each step is scoped and auditable.</span>
+          </li>
+          <li>
+            <strong>Retrieval + citations</strong>
+            <span>Every claim traces back to a data source. You can see where the information came from.</span>
+          </li>
+          <li>
+            <strong>Guardrails</strong>
+            <span>Rate limits, sanity checks, and human override at every critical juncture.</span>
+          </li>
+          <li>
+            <strong>Continuous evaluation</strong>
+            <span>False positive tracking and model performance reviews. The system is designed to get better over time.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ USE CASES ============ -->
+    <section class="section use-cases" id="use-cases" aria-labelledby="usecases-heading">
+      <div class="container">
+        <h2 class="section__title" id="usecases-heading" data-animate>Use Cases</h2>
+        <div class="grid grid--2" data-animate>
+          <div class="card">
+            <h3 class="card__title">Perps risk monitoring</h3>
+            <p class="card__body">
+              Track liquidation cascades, funding rate shifts, and open interest anomalies across perpetual markets. Get alerts before risk materializes.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Airdrop farming &amp; ecosystem tracking</h3>
+            <p class="card__body">
+              Monitor protocol activity, governance proposals, and token distribution events. Stay ahead of ecosystem developments without constant manual checking.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Onchain narrative shifts</h3>
+            <p class="card__body">
+              Detect when capital flows, whale behavior, and market structure signal a changing narrative. Context and reasoning included with every alert.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Healthcare &times; Web3</h3>
+            <p class="card__body">
+              Monitoring tokenized health data rails and compliance-sensitive narratives at the intersection of healthcare, AI, and crypto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECURITY ============ -->
+    <section class="section security bg-grid" id="security" aria-labelledby="security-heading">
+      <div class="container">
+        <h2 class="section__title" id="security-heading" data-animate>Security &amp; Compliance</h2>
+        <p class="section__intro" data-animate>
+          We are honest about where we are. No inflated claims.
+        </p>
+        <ul class="security__list" data-animate>
+          <li>
+            <svg class="security__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L2 4v4c0 3.5 2.6 6.4 6 7 3.4-.6 6-3.5 6-7V4L8 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            <span>Principled logging and access control</span>
+          </li>
+          <li>
+            <svg class="security__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L2 4v4c0 3.5 2.6 6.4 6 7 3.4-.6 6-3.5 6-7V4L8 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            <span>No claims of regulatory approval</span>
+          </li>
+          <li>
+            <svg class="security__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L2 4v4c0 3.5 2.6 6.4 6 7 3.4-.6 6-3.5 6-7V4L8 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            <span>Designed to be auditable and explainable</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="section__title" id="contact-heading" data-animate>Get in touch</h2>
+        <p class="section__intro" data-animate>
+          Interested in what we are building? Reach out directly.
+        </p>
+        <form class="contact-form" data-animate action="mailto:zakir@khawaja-ventures.com" method="POST" enctype="text/plain">
+          <div class="contact-form__field">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" name="Name" required autocomplete="name">
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" name="Email" required autocomplete="email">
+          </div>
+          <div class="contact-form__field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__contact">
+        <span class="footer__wordmark">Khawaja Ventures</span>
+        <a href="mailto:zakir@khawaja-ventures.com" class="footer__email">zakir@khawaja-ventures.com</a>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; 2026 Khawaja Ventures LLC</p>
+        <p class="text-xs text-secondary">Khawaja Ventures is the legal entity. Product brands may vary.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
